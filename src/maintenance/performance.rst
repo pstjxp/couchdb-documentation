@@ -51,7 +51,7 @@ Setting this argument to a number greater than zero can keep your CouchDB
 installation responsive even during periods of heavy disk utilization. The
 easiest way to set this option is through the ``ERL_FLAGS`` environment
 variable. For example, to give Erlang four threads with which to perform I/O
-operations add the following to ``(prefix)/etc/defaults/couchdb``
+operations add the following to ``(prefix)/couchdb/etc/vm.args``
 (or equivalent)::
 
     export ERL_FLAGS="+A 4"
